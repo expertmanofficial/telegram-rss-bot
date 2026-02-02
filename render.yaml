@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-rss-bot
+    env: docker
+    plan: free
+    envVars:
+      - key: TOKEN
+        sync: false
+      - key: MANAGER
+        sync: false
+      - key: DELAY
+        value: "300"
