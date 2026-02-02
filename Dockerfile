@@ -6,7 +6,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
 # Clone the RSS bot
-RUN git clone https://github.com/Rongronggg9/RSS-to-Telegram-Bot.git .
+RUN git clone --depth 1 --branch v2.14.0 https://github.com/Rongronggg9/RSS-to-Telegram-Bot.git 
 
 # Install requirements
 RUN pip install --no-cache-dir -r requirements.txt
