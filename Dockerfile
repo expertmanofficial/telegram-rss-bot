@@ -23,4 +23,3 @@ EXPOSE 8080
 
 # Start both services
 CMD ["/app/start.sh"]
-```
